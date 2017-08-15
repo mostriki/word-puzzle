@@ -2,8 +2,11 @@ $(document).ready(function() {
   $("form#userPuzzle").submit(function(event) {
     event.preventDefault();
     var quote = $("#quote").val;
-    
+    var quote = quote.toLowerCase().split("");
 
+    for(index=0; index < quote.length; index++) {
+      
+    }
   });
 
 
