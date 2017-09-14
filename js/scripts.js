@@ -15,18 +15,17 @@ function puzzle(input){
     result.push(input[i]);
   }
   console.log(result);
+  return result
 }
-
-
-
-
 
 $(document).ready(function() {
   $("form#userPuzzle").submit(function(event) {
     event.preventDefault();
 
     var quote = $("#quote").val();
-    var output = puzzle(quote)
+    var output = puzzle(quote).join('')
+
+    $('ul#output').append('<li>' + output + '</li>');
 
   });
 });
