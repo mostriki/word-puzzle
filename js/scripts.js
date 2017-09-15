@@ -5,7 +5,6 @@ function puzzle(input){
   var result = []
 
   for(i=0; i < input.length; i++) {
-
     for(j=0; j < vowel.length ; j++){
       if (input[i] === vowel[j]) {
         input[i] = "-"
